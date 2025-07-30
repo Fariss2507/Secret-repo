@@ -1,0 +1,52 @@
+import React from 'react';
+import { View, Text, Button, Alert } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Home from './navigation-screens/Home';
+import About from './navigation-screens/About';
+import Login from './navigation-screens/Login';
+import MyHeader from './navigation-screens/MyHeader';
+
+const Stack = createNativeStackNavigator();
+
+const sayHello=()=>{
+
+  Alert.alert('Hello', 'Helloo User Watsup')
+};
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Header"
+          component={MyHeader}
+          options={{
+            
+            headerTitle: () => (
+              <View style={{ paddingHorizontal: 10 }}>
+                <Text style={{ color: 'white', fontSize: 20 }}> Header </Text>
+              </View>
+            ),
+
+           
+            headerRight: () => (
+              <Button title="Go" onPress={() => {sayHello()}} color="yellow" />
+            ),
+
+            headerStyle: {
+              backgroundColor: 'crimson',
+            },
+            headerTitleAlign: 'left', 
+          }}
+        />
+
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="About" component={About} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;

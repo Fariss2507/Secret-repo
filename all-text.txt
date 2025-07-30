@@ -1,0 +1,55 @@
+import { View, Text } from 'react-native'
+import React from 'react'
+import GeminiSummary from './src/components/GeminiSummary';
+// import Search from './src/components/Search';
+// import GET_API_LIST from './src/components/GET_API_LIST';
+// import LoginPage from './src/components/LoginPage';
+// import DELETE_API from './src/components/DELETE_API';
+// import PATCH_API from './src/components/PATCH_API';
+// import PUT_API from './src/components/PUT_API';
+// import POST_API from './src/components/POST_API';
+// import GET_API from './src/components/GET_API';
+// import ModalDialogBox from './src/components/ModalDialogBox';
+// import AlertExample from './src/components/AlertExample';
+// import ModalDialogBox from './src/components/ModalDialogBox';
+// import UseRefHook from './src/components/UseRefHook';
+// import StatusBarExample from './src/components/StatusBarExample';
+// import StatusBar from './src/components/StatusBarExample';
+// import Loader from './src/components/Loader';
+// import StyleWithButtons from './src/components/StyleWithButtons';
+// import UseEffectHookUnmountingPhase from './src/components/UseEffectHookUnmountingPhase';
+// import UseEffectHookUpdatingPhase from './src/components/UseEffectHookUpdatingPhase';
+// import UseEffectHook from './src/components/UseEffectHook';
+// import LoginPage from './src/components/LoginPage';
+// import Grid from './src/components/Grid';
+
+const App = () => {
+  return (
+    // <LoginPage/> 
+     <View style={{flex:1 , alignContent:'center'}} > 
+  {/* <UseEffectHook/>  */}
+  {/* <UseEffectHookUpdatingPhase/> */}
+  {/* <UseEffectHookUnmountingPhase/> */}
+  {/* <StyleWithButtons/> */}
+  {/* <Loader/> */}
+  {/* <StatusBar/> */}
+  {/* <StatusBarExample/> */}
+  {/* <UseRefHook/> */}
+  {/* <ModalDialogBox/> */}
+   {/* <AlertExample/> */}
+   {/* <ModalDialogBox/> */}
+   {/* <GET_API/> */}
+   {/* <POST_API/> */}
+   {/* <PUT_API/> */}
+   {/* <PATCH_API/> */}
+   {/* <DELETE_API/> */}
+   {/* <LoginPage/> */}
+   {/* <GET_API_LIST/> */}
+   {/* <Search/> */}
+   <GeminiSummary/>
+
+    </View>    
+  );
+};
+
+export default App;
